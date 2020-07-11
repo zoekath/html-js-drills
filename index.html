@@ -12,10 +12,14 @@
 
 <body>
     <main>
+        <header>
+        <h1>HTML/JavaScript Drills</h1>
+            <p>Welcome to the HTML/JavaScript Drills!  Today you will be learning how to manipulate the DOM (Document Object Model AKA the elements on your html page).  This page is split into 4 sections.  Read the comments in the JavaScript to see what needs to be done in each section.</p>
+    </header>
         <div class="container">
             <div>
-                <h2>Hello, my name is <span id="name">Name</span></h2>
-                <h3>These are my favorite things</h3>
+                <div class="title">Hello, my name is <span id="name">Name</span></div>
+                <p>These are my favorite things</p>
                 <ul id="favthings"></ul>
                 <div id="codestatus">I don't like to code.</div>
             </div>
@@ -23,7 +27,7 @@
         </div>
         <div class="container">
             <div>
-                <h2>I like to collect information</h2>
+                <div class="title">I like to collect information</div>
                 <form id="form">
                     <div class="form-group">
                         <label for="fname">First name:</label>
@@ -76,7 +80,7 @@
                 </form>
             </div>
             <div>
-                <h2>And display that info here</h2>
+                <div class="title">And display that info here</div>
                 <div>First Name: <span id="firstname"></span></div>
                 <div>Last Name: <span id="lastname"></span></div>
                 <div>Car: <span id="chosencar"></span></div>
@@ -96,6 +100,25 @@
 
         </div>
 
+        <div class="container">
+            <div>
+                <div class="title">To Do List App</div>
+                <form class="form">
+                 
+                    <div class="form-group">
+                        <label for="todo" class="form-check-label">What do you need to do today?</label>
+                        <input type="text" class="form-control" id="todo" placeholder="Go grocery shopping">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add to To Do List</button>
+                </form>
+                
+            </div>
+            <div>
+                   <div class="title"> To Dos</div>
+                    <ul id="todos">
+                        <li>I need to do something!</li>
+                    </ul>
+                </div>
     </main>
 
     <script src="script.js"></script>
