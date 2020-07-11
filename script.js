@@ -67,7 +67,9 @@ document.getElementById('form').addEventListener('submit', function(event){
 /**************************************************** SECTION 4 ******************************************************************************************************/
 
 
-/*****Build a todo list.  For this you will need to have a listener on the submit form and add anything entered into the text box to the to do list on the right side */
+/*****Build a todo list.  For this you will need to have a listener on the submit form and add anything entered into the text box to the to do list on the right side.
+ *    Bonus:  Add a delete button next to each item and allow it to delete the item it is next to.
+ */
 
 
 
@@ -75,9 +77,12 @@ document.getElementById('form').addEventListener('submit', function(event){
 
 
 
-/**************************************************** Bonus ******************************************************************************************************/
+/**************************************************** Finally ******************************************************************************************************/
 
-/***** Customize this page and make it prettier! */
+/***** Add your own section to this app.  Use an javascript event listener that is new to you.  Here is a handy list: https://developer.mozilla.org/en-US/docs/Web/Events
+ * Click on each event listener to see an example of how it is used
+ * 
+  */
 
 
 
