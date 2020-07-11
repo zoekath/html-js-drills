@@ -58,7 +58,7 @@ document.getElementById('form').addEventListener('submit', function(event){
 
 
 /*****Create an event listener that observes keys being pressed and logs them to the console (Hint:  This will need an event listener that listens to the entire page  */
-
+//Bonus:  Find a way to render every key pressed somewhere on the html page
 //Your code goes here
 
 
