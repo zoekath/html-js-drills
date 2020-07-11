@@ -87,6 +87,8 @@ document.getElementById('form').addEventListener('submit', function(event){
 
 
 
+/**************************************************** BONUS ******************************************************************************************************/
+/*****Create a button and have that button play a sound or song using JavaScript.  Also create a button to stop that sound */
 
 
 
