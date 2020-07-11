@@ -34,7 +34,7 @@ function changeCodeStatus(){
 
 /******** On click of the submit button get the data entered and display it under "And Display that info Here" on the page  */
 document.getElementById('form').addEventListener('submit', function(event){
-    event.preventDefault();
+    event.preventDefault();  //What does this do?
     console.log("Form submitted");
     //Your code goes here
 });
