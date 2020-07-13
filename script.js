@@ -26,9 +26,7 @@ function replaceImage(){
 function changeCodeStatus(){
     //your code goes here
     console.log("changeCodeStatus() ran");
-
 }
-
 
 /**************************************************** SECTION 2 ******************************************************************************************************/
 
@@ -57,7 +55,7 @@ document.getElementById('form').addEventListener('submit', function(event){
 
 
 
-/*****Create an event listener that observes keys being pressed and logs them to the console (Hint:  This will need an event listener that listens to the entire page  */
+/*****Create an event listener that observes keys being pressed and logs them to the console (Hint:  This will need an event listener that listens to the entire page)  */
 //Bonus:  Find a way to render every key pressed somewhere on the html page
 //Your code goes here
 
@@ -70,8 +68,21 @@ document.getElementById('form').addEventListener('submit', function(event){
 /*****Build a todo list.  For this you will need to have a listener on the submit form and add anything entered into the text box to the to do list on the right side.
  *    Bonus:  Add a delete button next to each item and allow it to delete the item it is next to.
  */
+//Your code goes here
 
 
+/**************************************************** SECTION 5 ******************************************************************************************************/
+
+
+/*****  Use the SetInterval function to create a counter that counts every second on the page (Should look kind of like a stopwatch counting up).  Display this in the span with the id
+ * of 'seconds'.
+ * 
+ * Then use the SetTimeout function to display something (your choice) to the div with the id 'delayedDisplay' after 5 seconds have passed.
+ * 
+ * 
+ * Good resource:  https://javascript.info/settimeout-setinterval
+ */
+//Your code goes here
 
 
 
