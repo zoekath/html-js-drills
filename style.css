@@ -1,37 +1,37 @@
 .container {
-    display: grid;
-    grid-template-columns: auto auto;
-    width: 900px;
-    margin:0 auto;
-    /*this controls how much space the child divs take as well as how many to display in each row
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 900px;
+  margin: 0 auto;
+  /*this controls how much space the child divs take as well as how many to display in each row
     auto auto = 2 equally spaced columns           auto auto auto = 3 evenly spaced columns*/
-    border: 1px solid grey;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
- header{
-     text-align: center;
-     width: 50%;
-     margin: 0 auto;
- }
-form{
-    width:50%;
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
-
-.checkbox-label{
-    margin-top:20px;
+header {
+  width: 50%;
+  margin: 0 auto;
 }
 
-.btn{
-    margin:20px 0;    
+form {
+  width: 50%;
 }
 
-.output div{
-    margin: 35px 0px
+.checkbox-label {
+  margin-top: 20px;
 }
 
-.title{
-    font-weight: bold;
-    font-size:24px;
+.btn {
+  margin: 20px 0;
+}
+
+.output div {
+  margin: 35px 0px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 24px;
 }

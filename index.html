@@ -23,14 +23,17 @@
         <div class="title">Hello, my name is <span id="name">Name</span></div>
         <p>These are my favorite things</p>
         <ul id="favthings"></ul>
-        <div id="codestatus">I don't like to code.</div>
+        <div id="codestatus">I don't like to code</div>
       </div>
-      <img src="https://picsum.photos/id/237/200/300" alt="Image of myself" id="picture">
+      <img src="https://picsum.photos/id/237/200/300" width="200" height="300" alt="Image of myself" id="picture">
+      <div>
+        <button type="button" id="show-info-button" class="btn btn-primary">Show Info</button>
+      </div>
     </div>
     <div class="container">
       <div>
         <div class="title">I like to collect information</div>
-        <form id="form">
+        <form id="information-form">
           <div class="form-group">
             <label for="fname">First name:</label>
             <input type="text" id="fname" name="fname" value="John" class="form-control">
@@ -91,8 +94,8 @@
     </div>
     <div class="container">
       <div>
-        <button type="button" class="btn btn-primary">Click me to log something to the console</button>
-        <button type="button" class="btn btn-primary">Change the text to the right blue</button>
+        <button type="button" class="btn btn-primary" id="console-log-button">Click me to log something to the console</button>
+        <button type="button" class="btn btn-primary" id="make-blue-button">Change the text to the right blue</button>
       </div>
       <div class="output">
         <div>Log it!</div>

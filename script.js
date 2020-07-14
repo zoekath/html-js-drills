@@ -2,87 +2,189 @@
 // https://www.w3schools.com/js/js_htmldom.asp
 // https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector
 
-/** ************************************************** SECTION 1 ******************************************************************************************************/
-/** ***Step 1:  Use Javascript to replace the word name in <span id="name">Name</span> with your name. */
+/*****************************
+ * Section 1 - Personal Info *
+ *****************************
+ *
+ * Description:
+ *   Change the code below to display some (static) information
+ *   when a user clicks the "Show Info" button.
+ *
+ * Resources:
+ *   (See below for drill-specific resources)
+ */
+
 function addName() {
-  // your code goes here
   console.log('addName() ran');
+
+  // See:
+  // - https://www.digitalocean.com/community/tutorials/js-innertext-and-innerhtml
+  // - https://www.w3schools.com/jsref/prop_node_innertext.asp
+
+  let nameElement = document.querySelector('#name');
+  nameElement.innerText = 'See script.js!';
 }
 
-/** ***Step 2:  Use Javascript to add to the <ul id="favthings"> a list of your favorite things  */
 function addFavoriteThings() {
-  // your code goes here
-  console.log('addFavoriteThings() ran');
+  console.log('Called addFavoriteThings()');
+
+  // 1. Get a reference to <ul id="favthings">
+  // 2. Create a few list items representing your favorite things
+  // 3. Add them to append them to favthings
+
+  // See:
+  //   - https://htmldog.com/guides/javascript/advanced/creatingelements/
+  //   - https://www.javascripttutorial.net/javascript-dom/javascript-createelement/
+  //   - https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement
 }
 
-/** ****Step 3:  Change the picture of the puppy to a picture of yourself */
 function replaceImage() {
-  // your code goes here
-  console.log('replaceImage() ran');
+  console.log('Called replaceImage()');
+
+  // Change the puppy picture to a picture of your choosing
+
+  // See:
+  // - https://www.tutorialrepublic.com/javascript-tutorial/javascript-dom-get-set-attributes.php
+  // - https://www.w3schools.com/jsref/met_element_setattribute.asp
 }
 
-/** ***Step 4:  Change the <div id="codestatus"> to say "I do like to code" AND create and append an image of some code to that div */
-// Creating DOM Elements: https://www.w3schools.com/jsref/met_document_createelement.asp
 function changeCodeStatus() {
-  // your code goes here
-  console.log('changeCodeStatus() ran');
+  console.log('Called changeCodeStatus()');
+
+  // 1. Get a reference to <div id="codestatus">
+  // 2. Create image element containing a sweet ol' meme
+  // 3. Replace text in codestatus w/ image
 }
 
-/** ************************************************** SECTION 2 ******************************************************************************************************/
+// Get a reference to the button w/ id="show-info-button"
+let showInfoButton = document.querySelector('#show-info-button');
 
-/** ****** On click of the submit button get the data entered and display it under "And Display that info Here" on the page  */
-document.getElementById('form').addEventListener('submit', function(event) {
-  event.preventDefault(); // What does this do?
-  console.log('Form submitted');
-  // Your code goes here
-});
+// Do something when showInfoButton is clicke
+showInfoButton.addEventListener('click', function() {
+  console.log('Clicked "Show Info" button');
 
-/** ************************************************** SECTION 3 ******************************************************************************************************/
-/** ***Create an event listener for the button that says "Click me to log something to the console" and have it log something to the console */
+  // Implement addName, addFavoriteThings, replaceImage, changeCodeStatus above
 
-// Your code goes here
-
-/** ***Create an event listener for the button that says "Change the text to the right blue" and have it add the class "blue" to the text on the right */
-
-// Your code goes here
-
-/** ***Create an event listener that observes keys being pressed and logs them to the console (Hint:  This will need an event listener that listens to the entire page)  */
-// Bonus:  Find a way to render every key pressed somewhere on the html page
-// Your code goes here
-
-/** ************************************************** SECTION 4 ******************************************************************************************************/
-
-/** ***Build a todo list.  For this you will need to have a listener on the submit form and add anything entered into the text box to the to do list on the right side.
- *    Bonus:  Add a delete button next to each item and allow it to delete the item it is next to.
- */
-// Your code goes here
-
-/** ************************************************** SECTION 5 ******************************************************************************************************/
-
-/** ***  Use the SetInterval function to create a counter that counts every second on the page (Should look kind of like a stopwatch counting up).  Display this in the span with the id
- * of 'seconds'.
- *
- * Then use the SetTimeout function to display something (your choice) to the div with the id 'delayedDisplay' after 5 seconds have passed.
- *
- *
- * Good resource:  https://javascript.info/settimeout-setinterval
- */
-// Your code goes here
-
-/** ************************************************** Finally ******************************************************************************************************/
-
-/** *** Add your own section to this app.  Use an javascript event listener that is new to you.  Here is a handy list: https://developer.mozilla.org/en-US/docs/Web/Events
- * Click on each event listener to see an example of how it is used
- *
-  */
-
-/** ************************************************** BONUS ******************************************************************************************************/
-/** ***Create a button and have that button play a sound or song using JavaScript.  Also create a button to stop that sound */
-
-// This is an event listener that triggers a function to run after the page is finished loading
-document.addEventListener('DOMContentLoaded', function() {
   addName();
   addFavoriteThings();
   replaceImage();
   changeCodeStatus();
 });
+
+/**********************************
+ * Section 2 - Reading From Forms *
+ **********************************
+ *
+ * Description:
+ *   Change the code below to populate the section on the right-hand
+ *   side of the page with the data entered into the form.
+ *
+ */
+
+// Get a reference to form w/ id="information-form"
+let informationForm = document.querySelector('#information-form');
+
+// Do something when form is submitted
+informationForm.addEventListener('submit', function(event) {
+  event.preventDefault(); // You will want this here. Remove it and see what changes.
+
+  console.log('Form submitted');
+
+  // Your job:
+  //   1. Get information typed into the form
+  //   2. Display that info in "Display that info here" section
+
+  // Google things like:
+  //   javascript form element get values
+});
+
+/*************************************
+ * Section 3 - Clicks and Keypresses *
+ *************************************
+ *
+ * Description:
+ *   Make the buttons in section 3 of index.html behave as described below.
+ *
+ */
+
+// When a user clicks "Click me to log something to the console"
+// then log something to the console
+
+// Fill in ________ to get a reference to the correct button on the page
+let consoleLogButton = document.querySelector('#________');
+
+// Log something when that button is clicked
+consoleLogButton.addEventListener('click', function() {
+  console.log('Change this text if you want!');
+});
+
+let makeBlueButton = document.querySelector('#________');
+makeBlueButton.addEventListener('click', function() {
+  // Your job:
+  //  1. When a user clicks "Change the text to the right blue"
+  //  2. Change the text in <div id="colorText">...</div> to blue
+});
+
+// Adding an event listener to document means the "keydown" event
+// can happen anywhere on the page and we'll respond.
+document.addeventListener('keydown', function() {
+  // This is called whenever a user pressed any key.
+
+  // Your job:
+  //  1. Turn colorText red whenever a user presses the 'r' key
+  //  2. Add your own keybind somewhere
+
+  // See:
+  // - https://developer.mozilla.org/en-US/docs/Web/API/Document/keydown_event
+  // - https://javascript.info/keyboard-events
+});
+
+/*************************************
+ * Section 4 - TODO List             *
+ *************************************
+ *
+ * Description:
+ *   Build a simple TODO list.
+ *
+ *   For this you will need to have a listener on the submit form and add
+ *   anything entered into the text box to the to do list on the right side.
+ *
+ * Bonus:
+ *   Add a delete button next to each item and allow it to delete the item
+ *   it is next to.
+ */
+
+// Your code goes here
+
+/****************************************
+ * Section 5 - setInterval + setTimeout *
+ ****************************************
+ *
+ * Description:
+ *   Use the setInterval function to create a counter that counts every
+ *   second on the page (Should look kind of like a stopwatch counting up).
+ *   Display this in the span with the id of 'seconds'.
+ *
+ *   Then use the SetTimeout function to display something (your choice) to the
+ *   div with the id 'delayedDisplay' after 5 seconds have passed.
+ *
+ * Resources:
+ *   - https://javascript.info/settimeout-setinterval
+ *
+ */
+
+// Your code goes here
+
+/****************************************
+ * Section 6 - Your own section!        *
+ ****************************************
+ *
+ * Description:
+ *   Add your own section to this page with its own event listeners.
+ *   Use a JavaScript event listener that is new to you.
+ *   Here is a handy list: https://developer.mozilla.org/en-US/docs/Web/Events
+ *   Click on each event listener to see an example of how it is used
+ *
+ */
+
+// Your code goes here
