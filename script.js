@@ -81,7 +81,7 @@ showInfoButton.addEventListener('click', function() {
  *
  */
 
- // Get a reference to form w/ id="information-form"
+// Get a reference to form w/ id="information-form"
 let informationForm = document.querySelector('#information-form');
 
 // Do something when form is submitted
