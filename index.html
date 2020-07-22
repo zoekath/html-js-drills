@@ -20,7 +20,7 @@
     </header>
     <div class="container">
       <div>
-        <div class="title">Hello, my name is <span id="name">Name</span></div>
+        <div class="title">Hello, my name is <span id="name">...</span></div>
         <p>These are my favorite things</p>
         <ul id="favthings"></ul>
         <div id="codestatus">I don't like to code</div>
@@ -30,6 +30,8 @@
         <button type="button" id="show-info-button" class="btn btn-primary">Show Info</button>
       </div>
     </div>
+
+
     <div class="container">
       <div>
         <div class="title">I like to collect information</div>
@@ -83,6 +85,7 @@
           <button type="submit" class="btn btn-secondary">Submit</button>
         </form>
       </div>
+
       <div>
         <div class="title">And display that info here</div>
         <div>First Name: <span id="firstname"></span></div>
@@ -92,14 +95,20 @@
         <div>Checks: <span id="checks"></span></div>
       </div>
     </div>
+
+
+
+
+
     <div class="container">
       <div>
         <button type="button" class="btn btn-primary" id="console-log-button">Click me to log something to the console</button>
         <button type="button" class="btn btn-primary" id="make-blue-button">Change the text to the right blue</button>
       </div>
       <div class="output">
-        <div>Log it!</div>
-        <div id="colorText">Use JavaScript to give me a class of "blue"</div>
+        <div id="logText">Log it!</div>
+        <div id="colorText">Use JavaScript to give me a class of "blue" <br>
+        Press 'r' to make me red</div>
       </div>
 
     </div>
@@ -107,11 +116,11 @@
     <div class="container">
       <div>
         <div class="title">To Do List App</div>
-        <form class="form">
+        <form class="form" id="toDoList">
 
           <div class="form-group">
             <label for="todo" class="form-check-label">What do you need to do today?</label>
-            <input type="text" class="form-control" id="todo" placeholder="Go grocery shopping">
+            <input type="text" class="form-control" id="toDoItem" placeholder="Go grocery shopping">
           </div>
           <button type="submit" class="btn btn-primary">Add to To Do List</button>
         </form>
