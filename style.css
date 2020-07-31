@@ -35,3 +35,67 @@ form {
   font-weight: bold;
   font-size: 24px;
 }
+
+.OwnSection{
+  border: solid grey 1px;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: auto auto;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#animation{
+  padding: 20px;
+  font-size: larger;
+  font-weight: bold;
+  text-shadow: 1px 1px white, 2px 2px black;
+}
+
+@keyframes yeah{
+  0%{text-align: center; color: yellow; letter-spacing: 1px;}
+  25%{margin-left: 0; margin-right: 90%; color: blue; letter-spacing: 6px;}
+  75%{margin-left: 70%; margin-right: 0; color: red; letter-spacing: 5px;}
+  100%{text-align: center; color: yellow; letter-spacing: 1px;}
+}
+
+#startAnimation{
+  background-image: url('https://images.freecreatives.com/wp-content/uploads/2016/02/Red-Flower-Background-For-Download.jpg');
+  background-size: cover;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  border: transparent;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px grey, 2px 2px black;
+}
+
+#startAnimation:hover{
+  background-image: url('https://i.ytimg.com/vi/QGFaKLkocwQ/maxresdefault.jpg');
+  background-size: cover;
+  font-weight: bold;
+}
+
+#stopAnimation{
+  display: none;
+  background-image: url('http://www.hdwallpaperspulse.com/wp-content/uploads/2014/05/19/56.jpeg');
+  background-size: cover;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  border-radius: 20px;
+  border: transparent;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px grey, 2px 2px black;
+}
+
+#stopAnimation:hover{
+  background-image: url('http://www.wallpaperup.com/uploads/wallpapers/2014/03/15/299213/bba3690f88a291952ba6359b0bc4906b.jpg');
+  background-size: cover;
+  font-weight: bold;
+}

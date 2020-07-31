@@ -237,7 +237,20 @@ addItems.addEventListener('submit', function(){
 
   let toDoList = document.querySelector('#todos');
   toDoList.appendChild(newToDoItem);
+
+  let deleteButton = document.createElement('button');
+  deleteButton.textContent = 'Delete';
+  newToDoItem.appendChild(deleteButton);
+
+  deleteButton.addEventListener('click', function(){
+    console.log('item removed');
+    newToDoItem.remove();
+    deleteButton.remove();
+  })
 });
+
+
+
 /****************************************
  * Section 5 - setInterval + setTimeout *
  ****************************************
@@ -282,3 +295,20 @@ let delayedTimeout = setTimeout(function(){
  */
 
 // Your code goes here
+
+let startAnimation = document.querySelector('#startAnimation');
+let animation1 = document.querySelector('#animation');
+let stopThis = document.querySelector('#stopAnimation');
+
+startAnimation.addEventListener('click', function(){
+  animation1.innerHTML = "WUHUUU!!!"
+  animation1.style.animation = "yeah 5s infinite";
+  console.log('Start Button clicked');
+  stopThis.style.display = 'inline';
+})
+
+stopThis.addEventListener('click', function(){
+  console.log('Stop Button Clicked');
+  animation1.style.animation = 'none';
+  stopThis.style.display = 'none';
+})
